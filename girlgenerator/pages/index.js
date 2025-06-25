@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import ImageGenerator from "./components/girlGenerator";
-import styles from '../styles/ImageGenerator.module.css'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (

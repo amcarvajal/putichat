@@ -24,6 +24,8 @@ export default async function handler(req, res) {
 
   const prediction = await response.json();
 
+  console.log('prediction::', prediction);
+
   if (prediction?.detail === "Authentication credentials were not provided.") {
     return res.status(401).json({ error: "Token inválido o ausente" });
   }
